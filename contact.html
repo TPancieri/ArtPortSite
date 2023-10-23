@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lightbox.css">
+    <script type="text/javascript" src="/Sarah/FR/script.js"></script>
+    <title>Sarah Pancieri Portfolio </title>
+</head>
+<body>
+    <!-- Header -->
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Images/logo.jpg" class="logo"></a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">SOBRE</a></li>
+                    <li><a href="art.html">ARTE</a></li>
+                    <li><a href="contact.html">CONTATO</a></li>
+                    <li><a href="cv.html">CURRÍCULO</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Entre em contato</h1>
+    </section>
+
+<!-- Contato -->
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+55 62 9 12345678 </h5>
+                    <p>Segunda a Sabado, 08:00 as 20:00</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>sarahpancieri@gmail.com</h5>
+                    <p>Faça uma solicitacao por email</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="form-handler.php" method="post">
+                <input  type="text" name="name" placeholder="Digite Seu Nome" required>
+                <input  type="email" name="email" placeholder="Digite Seu Email" required>
+                <input  type="text" name="subject" placeholder="Tipo De Pedido (Digital/Pintura/Fotografia)" required>
+                <br>
+                <textarea rows="8" name="message" placeholder="Espeficique Seu Pedido"></textarea>
+                <br>
+                <button type="submit" class="hero-btn red-btn">Enviar Pedido</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>Onde Estou</h4>
+        <div class="icons">
+            <a href="https://twitter.com">
+            <i class="fa  fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com">
+            <i class="fa  fa-instagram"></i>
+            </a>
+            <a href="https://whatsapp.com">
+            <i class="fa fa-whatsapp"></i>
+            </a>
+            <a href="https://linkedin.com">
+            <i class="fa fa-linkedin"></i>
+            </a>
+            
+        </div>
+    </section>
+
+    <script>
+
+        //    <!-- Toggle Menu -->
+
+        var navLinks = document.getElementById("nav-links");
+        
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+        </script>
+        <script src="lightbox-plus-jquery.js"></script>
+</body>
+</html>

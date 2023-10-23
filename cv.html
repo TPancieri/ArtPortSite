@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lightbox.css">
+    <script type="text/javascript" src="/Sarah/FR/script.js"></script>
+    <title>Sarah Pancieri Portfolio </title>
+</head>
+<body>
+    <!-- Header -->
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Images/logo.jpg" class="logo"></a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">SOBRE</a></li>
+                    <li><a href="art.html">ARTE</a></li>
+                    <li><a href="contact.html">CONTATO</a></li>
+                    <li><a href="cv.html">CURRÍCULO</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Curriculo</h1>
+    </section>
+
+<!-- Curriculo -->
+
+<section class="cv">
+
+    <div class="row">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Justo donec enim diam vulputate ut pharetra sit amet aliquam. Neque convallis a cras semper auctor neque vitae tempus. 
+        Fusce ut placerat orci nulla pellentesque dignissim. Pulvinar etiam non quam lacus suspendisse faucibus interdum.
+        Est velit egestas dui id. Justo donec enim diam vulputate ut pharetra sit amet aliquam. Aliquet porttitor lacus luctus accumsan tortor posuere. 
+        Sodales ut eu sem integer vitae justo eget magna fermentum. Velit laoreet id donec ultrices tincidunt arcu. Massa vitae tortor condimentum lacinia quis vel eros donec. 
+        Nibh venenatis cras sed felis. In tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Velit scelerisque in dictum non consectetur a erat nam at. 
+        In eu mi bibendum neque egestas. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet. 
+        Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non. A diam sollicitudin tempor id eu. Habitant morbi tristique senectus et netus et malesuada. 
+        Tortor vitae purus faucibus ornare. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. </p>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>Onde Estou</h4>
+        <div class="icons">
+            <a href="https://twitter.com">
+            <i class="fa  fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com">
+            <i class="fa  fa-instagram"></i>
+            </a>
+            <a href="https://whatsapp.com">
+            <i class="fa fa-whatsapp"></i>
+            </a>
+            <a href="https://linkedin.com">
+            <i class="fa fa-linkedin"></i>
+            </a>
+            
+        </div>
+    </section>
+
+    <script>
+
+        //    <!-- Toggle Menu -->
+
+        var navLinks = document.getElementById("nav-links");
+        
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+        </script>
+        <script src="lightbox-plus-jquery.js"></script>
+</body>
+</html>
